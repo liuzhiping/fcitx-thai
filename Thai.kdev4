@@ -1,0 +1,4 @@
+[Project]
+Name=Thai
+Manager=KDevCMakeManager
+VersionControl=kdevgit
