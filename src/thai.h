@@ -20,4 +20,14 @@
 
 #ifndef _FCITX_THAI_H_
 #define _FCITX_THAI_H_
+
+typedef enum _ThaiKBMap
+{
+    THAI_KB_KETMANEE,
+    THAI_KB_PATTACHOTE,
+    THAI_KB_TIS820_2538
+} ThaiKBMap;
+
+unsigned char thai_map_qwerty (ThaiKBMap map, unsigned char c);
+
 #endif

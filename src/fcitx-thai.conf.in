@@ -2,7 +2,7 @@
 Name=fcitx-thai
 _GeneralName=Thai Addon of Fcitx
 _Comment=
-Category=Module
+Category=InputMethod
 Enabled=True
 Library=fcitx-thai.so
 Type=SharedLibrary

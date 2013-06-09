@@ -23,16 +23,27 @@
 
 #include "thai.h"
 #include <fcitx/instance.h>
+#include <thai/thinp.h>
 
 #define _(x) dgettext("fcitx-thai", x)
 
+#define FALLBACK_BUFF_SIZE 4
+
+typedef uint32_t tischar_t;
+
+
 typedef struct {
     FcitxGenericConfig gconfig;
+    ThaiKBMap kb_map;
+    thstrict_t isc_mode;
+    boolean do_correct;
 } FcitxThaiConfig;
 
 typedef struct {
     FcitxThaiConfig config;
     FcitxInstance *owner;
+    tischar_t char_buff[FALLBACK_BUFF_SIZE];
+    short buff_tail;
 } FcitxThai;
 
 CONFIG_BINDING_DECLARE(FcitxThaiConfig);

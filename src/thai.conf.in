@@ -1,0 +1,7 @@
+[InputMethod]
+UniqueName=thai
+_Name=Thai
+IconName=thai
+Priority=10
+LangCode=th
+Parent=fcitx-thai
